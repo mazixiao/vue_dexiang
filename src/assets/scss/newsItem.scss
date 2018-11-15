@@ -1,0 +1,130 @@
+
+
+
+.newsItem {
+	margin-top: 58px;
+	.banner {
+		width: 100%;
+		font-size: 0;
+		position: relative;
+		overflow: hidden;
+		img {
+			position: relative;
+			width: 200%;
+			max-width: 200%;
+			left: 50%;
+			transform: translateX(-50%);			
+		}
+		.text {
+		    color: #fff;
+		    font-size: 20px;
+		    position: absolute;
+		    top: 50%;
+		    left: 27px;
+		}		
+	}	
+
+	.contentss {
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	    font-size: 0;
+		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+		.video_con {
+			width: 100%;
+			.item {
+			    border-bottom: 1px solid #e5e5e5;
+			    display: inline-block;
+				width: 100%;
+				padding: 15px 0;
+				.left {
+				    display: inline-block;
+				    vertical-align: middle;
+				    margin-right: 3%;
+				    position: relative;
+				    overflow: hidden;
+				    border-radius: 50%;
+				    z-index: 1;
+					width: 100px;
+					height: 100px;
+					.big {
+					    width: 100%;
+					}
+					.small {
+					    position: absolute;
+					    z-index: 2;
+					    top: 50%;
+					    left: 50%;
+					    transform: translate(-50%, -50%);
+					    width: 12px;
+					}
+				}
+				.right {
+				    color: #666;
+				    display: inline-block;
+				    vertical-align: middle;
+				    box-sizing: border-box;
+				    padding-right: 1%;
+					font-size: 12px;
+					width: 60%;
+				}
+			}
+		}
+	}
+
+	.video_play {
+		position: relative;
+		z-index: 1000;
+		.shadow {
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background: rgba(0, 0, 0, 0.7);
+		    z-index: 2;
+		}
+		#videoss {
+		    position: fixed;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    width: 600px;
+		    object-fit: cover;
+			width: 95%;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			z-index: 3;
+		}
+	}
+
+
+
+}
+
+
+
+.box1 {
+  height: 100px;
+  position: relative;
+  width: 1490px;
+}
+.box1-item {
+  width: 200px;
+  height: 100px;
+  background-color: #ccc;
+  display:inline-block;
+  margin-left: 15px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+.box1-item:first-child {
+  margin-left: 0;
+}
+.box2-wrap {
+  height: 300px;
+  overflow: hidden;
+}

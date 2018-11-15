@@ -1,0 +1,510 @@
+@charset "UTF-8";
+@import 'public';
+
+body {
+	// 网页字体缩放样式
+	-webkit-text-size-adjust:none;
+	text-size-adjust:none;
+	font-size: 0;
+}
+
+ .header {
+ 	background: #504f53;
+ 	height: px2em(60px);
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	z-index: 10;
+ 	.logo {
+ 		display: inline-block;
+ 		width: px2em(70px);
+ 		position: absolute;
+ 		left: 0;
+ 		top: 0;
+ 		margin: px2em(14px) px2em(5px) 0 px2em(5px);
+	 	img {
+	 		width: 100%;
+	 	} 		
+ 	}
+ 	.nav_switch {
+ 		color: #fff;
+ 		height: 100%;	
+ 		width: px2em(60px);
+ 		// background: red;
+ 		display: inline-block;
+ 		height: px2em(60px);
+ 		line-height: px2em(60px);
+ 		text-align: center;
+ 		position: absolute;
+ 		right: 0;
+ 		top: 0;
+ 		.iconfont {
+ 			display: inline-block;
+ 			font-size: px2em(30px);
+ 			position: absolute;
+ 			left: 50%;
+ 			top: 50%;
+ 			transform: translate(-50%, -50%);
+ 			transition: all 0.4s;
+ 			z-index: 1;
+ 			&.hide {
+ 				opacity: 0;
+ 			}
+ 		}
+ 	}
+
+ }
+
+
+.nav {
+	position: fixed;
+	top: px2em(60px);
+	width: 90%;
+	height: 100%;
+	background-color: #504f53;
+	transition: all 0.4s;					
+	right: 0;
+	z-index: 9;
+	&.hide {
+		right: -90%;
+	}	
+	.shadow {
+		position: fixed;
+		top: px2em(60px);
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.3);
+		z-index: 10;
+	}
+	.navss {
+		position: fixed;
+		top: px2em(60px);
+		z-index: 11;
+		color: #fff;
+		width: 100%;
+		height: 100%;
+		overflow: scroll;
+		padding-bottom: 100px;
+		box-sizing: border-box;
+		.nav_con {
+			width: 90%;
+			.oneHierarchy {
+				width: 100%;
+				font-size: 0;
+				.hierarchy1_tit {
+					height: 40px;
+					line-height: 40px;
+					background: #000;
+					display: inline-block;
+					width: 100%;
+					border-bottom: 1px solid #444;
+					font-size: 0;
+					box-sizing: border-box;
+					a {
+						float: left;
+						font-size: 14px;
+						color: #fff;
+						display: inline-block;
+						width: 50%;
+						text-align: left;
+						box-sizing: border-box;
+						padding-left: 10px;
+						&.cover {
+							width: 100%;
+						}
+					}
+					.iconfont {
+						float: right;
+						font-size: 14px;
+						color: #fff;
+						display: inline-block;
+						width: 50%;
+						text-align: right;
+						box-sizing: border-box;
+						padding-right: 10px;
+					}
+				}
+				.twoHierarchy {
+					width: 100%;
+					.hierarchy2_tit {
+						height: 40px;
+						line-height: 40px;
+						background: #222;
+						display: inline-block;
+						width: 100%;
+						border-bottom: 1px solid #444;
+						font-size: 0;
+						box-sizing: border-box;
+						a {
+							float: left;
+							font-size: 12px;
+							color: #9B9EA0;
+							display: inline-block;
+							width: 50%;
+							text-align: left;
+							box-sizing: border-box;
+							padding-left: 15px;
+							&.cover {
+								width: 100%;
+							}
+						}
+						.iconfont {
+							float: right;
+							font-size: 12px;
+							color: #9B9EA0;
+							display: inline-block;
+							width: 50%;
+							text-align: right;
+							box-sizing: border-box;
+							padding-right: 10px;
+						}
+					}
+					.threeHierarchy {
+						width: 100%;
+						.hierarchy3_tit {
+							height: 40px;
+							line-height: 40px;
+							background: #333;
+							display: inline-block;
+							width: 100%;
+							border-bottom: 1px solid #444;
+							font-size: 0;
+							box-sizing: border-box;
+							a {
+								float: left;
+								font-size: 12px;
+								color: #9B9EA0;
+								display: inline-block;
+								width: 50%;
+								text-align: left;
+								box-sizing: border-box;
+								padding-left: 20px;
+								&.cover {
+									width: 100%;
+								}
+							}
+							.iconfont {
+								float: right;
+								font-size: 12px;
+								color: #9B9EA0;
+								display: inline-block;
+								width: 50%;
+								text-align: right;
+								box-sizing: border-box;
+								padding-right: 10px;
+							}
+						}
+						.fourHierarchy {
+							width: 100%;
+							.hierarchy4_tit {
+								height: 40px;
+								line-height: 40px;
+								background: #3B3B3B;
+								display: inline-block;
+								width: 100%;
+								border-bottom: 1px solid #444;
+								font-size: 0;
+								box-sizing: border-box;
+								a {
+									float: left;
+									font-size: 12px;
+									color: #9B9EA0;
+									display: inline-block;
+									width: 50%;
+									text-align: left;
+									box-sizing: border-box;
+									padding-left: 25px;
+									&.cover {
+										width: 100%;
+									}
+								}
+								.iconfont {
+									float: right;
+									font-size: 12px;
+									color: #9B9EA0;
+									display: inline-block;
+									width: 50%;
+									text-align: right;
+									box-sizing: border-box;
+									padding-right: 10px;
+								}
+							}
+						}						
+					}					
+				}
+			}
+		}
+		.three_header {
+			font-size: 14px;
+			width: 90%;
+			box-sizing: border-box;
+			padding: 10px;
+			padding-bottom: 30px;
+			font-size: 0;
+			.right {
+				width: 100%;
+				.search {
+					height: 45px;
+					width: 100%;
+					display: inline-block;
+					box-sizing: border-box;
+					font-size: 14px;
+					border: 1px solid rgba(255, 255, 255, 0.2);
+					background: transparent;
+					transition: all 0.4s;
+					color: #fff;
+					font-size: 0;
+					input {
+						width: 80%;
+						height: 100%;
+						background: none;
+						box-sizing: border-box;
+						padding-left: 10px;
+						vertical-align: top;
+						color: #fff;
+						&::-webkit-input-placeholder {
+							color: #fff;
+							font-family: 'Hiragino', 'microsoft yahei' !important;
+						}
+						&::-moz-placeholder {
+							/* Mozilla Firefox 19+ */
+							color: #fff;
+							font-family: 'Hiragino', 'microsoft yahei' !important;
+						}
+						&:-moz-placeholder {
+							/* Mozilla Firefox 4 to 18 */
+							color: #fff;
+							font-family: 'Hiragino', 'microsoft yahei' !important;
+						}
+						&:-ms-input-placeholder {
+							/* Internet Explorer 10-11 */
+							color: #fff;
+							font-family: 'Hiragino', 'microsoft yahei' !important;
+						}													
+					}
+					a {
+						width: 20%;
+						height: 100%;
+						background: none;
+						display: inline-block;
+						vertical-align: top;
+						text-align: center;
+						img {
+							width: 14px;
+							margin-top: 15px;
+						}
+					}					
+				}
+				.member {
+					font-size: 0;
+					display: inline-block;
+					margin-right: 10px;	
+					float: left;				
+					a {
+						color: #fff;
+						font-size: 14px;
+						display: inline-block;
+						height: 40px;
+						line-height: 40px;
+						margin-top: 10px;
+						&:nth-child(1) {
+							padding: 0 15px;
+							border: 1px solid rgba(255, 255, 255, 0.2);
+							text-align: center;
+							margin-right: 10px;
+						}
+						&:nth-child(2) {
+							padding: 0 15px;
+							border: 1px solid rgba(255, 255, 255, 0.2);
+							text-align: center;
+						}																		
+					}
+				}
+				.english {
+					padding: 0 15px;
+					line-height: 40px;
+					font-size: 0;
+					display: inline-block;
+					color: #fff;
+					border: 1px solid rgba(255, 255, 255, 0.2);
+					margin-top: 10px;
+					vertical-align: top;
+					box-sizing: border-box;
+					float: right;
+					i {
+						vertical-align: middle;
+						margin-right: 4px;
+						display: inline-block;
+						font-size: 20px;
+						transition: all 0.4s;						
+					}
+					span {
+						vertical-align: middle;
+						font-size: 14px;
+						transition: all 0.4s;						
+					}
+				}
+			}
+		}		
+	}
+}
+
+
+
+.overturn {
+	-webkit-transform: rotate(180deg) translate3d(0, 0, 0);
+	-moz-transform: rotate(180deg) translate3d(0, 0, 0);
+	transform: rotate(180deg) translate3d(0, 0, 0);
+	text-align: left !important;
+	padding-left: 10px;
+	padding-right: 0 !important;
+}
+
+
+footer {
+    background: #414141 !important;
+    width: 100%;
+    text-align: left;
+	.footer_con {
+	    width: 100%;
+	    box-sizing: border-box;
+	    margin: 0 auto;
+	    padding: 0 10px;
+		.contact {
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border-bottom: 1px solid #545454;
+			.left {
+			    vertical-align: middle;
+				img {
+				    width: 30px;
+				    margin-right: 15px;
+				}
+				.con {
+				    color: #fff;
+				    text-align: left;
+					.one {
+					    font-size: 14px;
+					}
+					.two {
+					    font-size: 20px;
+					    font-weight: bold;
+					}
+				}					    
+			}
+			.right {
+				padding-top: 10px;	
+				.text {
+				    font-size: 14px;
+				    color: #fff;
+				    vertical-align: middle;
+				}	
+				.weixin {
+				    width: 40px;
+				    height: 40px;
+				    line-height: 40px;
+				    background: #464646;
+				    border-radius: 50%;
+				    display: inline-block;
+				    position: relative;
+				    vertical-align: middle;
+				    margin: 0 10px 0 20px;
+					i {
+						font-size: 18px;
+						color: #fff;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						transition: all 0.4s;
+					}	
+					img {
+					    position: absolute;
+					    width: 120px;
+					    max-width: 120px;
+					    top: 50px;
+					    left: -38px;
+					    display: none;
+					}	
+					&:hover {
+						img {
+							display: block;
+						}
+					}													
+				}										
+			}
+		}	 
+		.copyright {
+		    margin-top: 20px;
+			.friendLink {
+			    margin-bottom: 10px;
+				a {
+				    font-size: 0;
+				    margin-right: 20px;
+				    display: inline-block;
+				    vertical-align: middle;
+				}
+			}
+			.copyrights {
+			    padding-bottom: 30px;
+				.one {
+				    font-size: 12px;
+				    line-height: 24px;
+				    color: #fff;
+				}    
+			}			
+		} 
+	}    
+}
+
+
+.backTop {
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	background: #00449b;
+	border: 1px solid #00449b;
+	box-sizing: border-box;
+	z-index: 80;
+	bottom: 15%;
+	text-align: center;
+	right: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	img {
+	    width: 16px;
+	    margin-top: 10px;		
+	}
+}
+
+// 面包屑
+.crumbs {
+	padding-top: 10px;
+	top: 60px;
+	position: absolute;
+	z-index: 3;
+	padding-top: 20px;
+	padding-left: 27px;
+	padding-right: 5px;
+	width: 100%;
+	box-sizing: border-box;
+
+	a {
+	    color: #fff;
+	    font-size: 12px;
+	    transition: all 0.4s;
+	}	
+	i {
+	    font-size: 12px;
+	    color: #fff;
+		&:last-of-type {
+			display: none;
+		}	    
+	}	
+	span {
+	    color: #fff;
+	    font-size: 12px;
+	}				
+}
