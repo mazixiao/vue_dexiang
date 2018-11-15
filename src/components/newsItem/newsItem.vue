@@ -14,7 +14,7 @@
 
 
 
-		<h1 style='font-size: 100px;background-color: red;color: #fff'>新闻列表</h1>
+		<h1 style='font-size: 100px;background-color: red;color: green'>新闻列表</h1>
 <!-- 		<div class="newsDetail2">
 			<div class="item" v-if="ajaxData" v-for="(item, index) in ajaxData" :key='index'>
 				<a class='tit_s' target="_blank" :href="item.url">{{item.title}}</a>
