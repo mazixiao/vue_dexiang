@@ -15,10 +15,8 @@
 
 <div class="contentss">
 	<div class="tit">新闻动态</div>
-    <scroller lock-x height="300px" @on-scroll-bottom="onScrollBottom" ref="scrollerBottom" :scroll-bottom-offst="400">
-      <div class="box2">
-        <!-- <p v-for="i in bottomCount">placeholder {{i}}</p> -->
-		<div class="newsDetail2">
+    <scroller lock-x height="400px" @on-scroll-bottom="onScrollBottom" ref="scrollerBottom" :scroll-bottom-offst="300">
+		<div class="newsDetail">
 			<div class="item" v-if="ajaxData" v-for="(item, index) in ajaxData" :key='index'>
 				<a class='tit_s' target="_blank" :href="item.url">{{item.title}}</a>
 				<div class="introduct">{{item.content}}</div>
@@ -32,7 +30,6 @@
 			</div>
 		</div>
         <load-more tip="loading"></load-more>
-      </div>
     </scroller>
 </div>
 		
