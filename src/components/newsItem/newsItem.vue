@@ -6,32 +6,15 @@
 <template>
 	<div class="newsItem">
 		<commonHeader></commonHeader>
-<!-- 		<crumbs></crumbs>
-		<div class="banner">
+		<crumbs></crumbs>
+<!-- 		<div class="banner">
 			<img src="../../assets/img/videoImg/banner.jpg" alt="">
 			<div class="text">{{this.$route.query.banner}}</div>
 		</div> -->
 
 
-
-		<h1 style='font-size: 100px;background-color: red;color: yellow'>新闻列表周五啊</h1>
-<!-- 		<div class="newsDetail2">
-			<div class="item" v-if="ajaxData" v-for="(item, index) in ajaxData" :key='index'>
-				<a class='tit_s' target="_blank" :href="item.url">{{item.title}}</a>
-				<div class="introduct">{{item.content}}</div>
-				<div class="img">
-					<a :href='imgs' target="_blank" v-for="(imgs, index1) in item.imageUrls" :key='index1' :style="{'background-image': 'url(' + imgs + ')'}"></a>
-				</div>
-				<div class="source">
-					<div class="time">{{item.publishDateStr}}</div>
-					<div class="author">作者：{{item.posterScreenName}}</div>
-				</div>
-			</div>
-		</div> -->
-
-
-
-    <!-- <divider> </divider> -->
+<div class="contentss">
+	<div class="tit">新闻动态</div>
     <scroller lock-x height="300px" @on-scroll-bottom="onScrollBottom" ref="scrollerBottom" :scroll-bottom-offst="400">
       <div class="box2">
         <!-- <p v-for="i in bottomCount">placeholder {{i}}</p> -->
@@ -51,6 +34,13 @@
         <load-more tip="loading"></load-more>
       </div>
     </scroller>
+</div>
+		
+
+
+
+
+
 
 
 
