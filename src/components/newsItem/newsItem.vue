@@ -14,7 +14,7 @@
 
 
 
-		<h1 style='font-size: 100px;background-color: red;color: yellow'>新闻列表周四</h1>
+		<h1 style='font-size: 100px;background-color: red;color: yellow'>新闻列表周五啊</h1>
 <!-- 		<div class="newsDetail2">
 			<div class="item" v-if="ajaxData" v-for="(item, index) in ajaxData" :key='index'>
 				<a class='tit_s' target="_blank" :href="item.url">{{item.title}}</a>
