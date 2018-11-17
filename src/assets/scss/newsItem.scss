@@ -31,7 +31,7 @@
 
 	.contentss {
 	    margin: 0 auto;
-	    margin-top: 20px;
+	    margin-top: 10px;
 	    margin-bottom: 20px;
 	    // font-size: 0;
 		width: 100%;
@@ -39,10 +39,11 @@
 		box-sizing: border-box;
 		.tit {
 			font-size: 22px;
-			padding-bottom: 20px;
+			padding-bottom: 10px;
 			border-bottom: 1px solid #e5e5e5;
 		}
 		.newsDetail {
+			padding-bottom: 10px;
 			.item {
 				margin-top: 10px;
 				margin-bottom: 10px;
@@ -71,54 +72,25 @@
 				    vertical-align: top;
 				    font-size: 0;
 				    width: 100%;
-				    a {
+				    .imgs {
 						display: inline-block;
 						background-size: cover;
 						background-position: center;
 						background-repeat: no-repeat;
-						width: 49.5%;
-						height: 150px;
+						width: 32.6%;
+						height: 100px;
 						-webkit-box-sizing: border-box;
 						box-sizing: border-box;
 						margin-right: 1%;
 						border-bottom: 4px solid #fff;
-						&:nth-child(2n) {
+						&:nth-child(3n) {
 							margin-right: 0;
 						}
 				    }
 				}
 			}
 		}
-
 	}
-
-
-
-
-
 }
 
 
-
-.box1 {
-  height: 100px;
-  position: relative;
-  width: 1490px;
-}
-.box1-item {
-  width: 200px;
-  height: 100px;
-  background-color: #ccc;
-  display:inline-block;
-  margin-left: 15px;
-  float: left;
-  text-align: center;
-  line-height: 100px;
-}
-.box1-item:first-child {
-  margin-left: 0;
-}
-.box2-wrap {
-  height: 300px;
-  overflow: hidden;
-}

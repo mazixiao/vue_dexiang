@@ -79,9 +79,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
 		<div class="company_news">
 			<div class="tit">{{company_news.tit}}</div>
 			<ul>
@@ -93,12 +90,6 @@
 						<x-img :src="item.img"  @on-success="success" @on-error="error" class="ximg-demo" error-class="ximg-error" :offset="-100" container="#vux_view_box_body"></x-img>
 
 					</div>
-
-
-      
-
-
-
 					<div class="text">{{item.text}}</div>
 					<div class="date">
 						<div class="dates">
