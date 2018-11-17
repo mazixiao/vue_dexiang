@@ -1,5 +1,5 @@
 
-import { Scroller, Divider, Spinner, XButton, Group, Cell, LoadMore, XImg } from 'vux'
+import { Scroller, Divider, Spinner, XButton, Group, Cell, LoadMore } from 'vux'
 
 // 引用组件
 import commonHeader from '../../components/common/header'
@@ -22,8 +22,7 @@ export default {
 		XButton,
 		Group,
 		Cell,
-		LoadMore,
-		XImg
+		LoadMore
 
 	},
 	data() {
@@ -33,10 +32,6 @@ export default {
 			// 页码
 			pageToken: 1,
 			onFetching: false,
-      showList1: true,
-      scrollTop: 0,
-      onFetching: false,
-      bottomCount: 20
 		}
 	},
 	//在模板渲染之前调用(ajax越早越好)
@@ -78,16 +73,5 @@ export default {
 	        }, 2000)
 	      }
 	    },
-	    // 懒加载
-	    success (src, ele) {
-	      console.log('success load', src)
-	      const span = ele.parentNode.querySelector('span')
-	      ele.parentNode.removeChild(span)
-	    },
-	    error (src, ele, msg) {
-	      console.log('error load', msg, src)
-	      const span = ele.parentNode.querySelector('span')
-	      span.innerText = 'load error'
-	    }
 	}
 }		
