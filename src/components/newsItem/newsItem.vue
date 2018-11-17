@@ -15,7 +15,7 @@
 
 <div class="contentss">
 	<div class="tit">新闻动态  测试周六</div>
-    <scroller lock-x height="400px" @on-scroll-bottom="onScrollBottom" ref="scrollerBottom" :scroll-bottom-offst="300">
+    <scroller lock-x height="400px" @on-scroll-bottom="onScrollBottom" ref="scrollerBottom" :scroll-bottom-offst="400">
 		<div class="newsDetail">
 			<div class="item" v-if="ajaxData" v-for="(item, index) in ajaxData" :key='index'>
 				<a class='tit_s' target="_blank" :href="item.url">{{item.title}}</a>

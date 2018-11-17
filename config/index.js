@@ -21,8 +21,8 @@ module.exports = {
     },
     // git remote add origin https://github.com/mazixiao/vue_zhutian.git
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
-    // host: '192.168.5.253', // can be overwritten by process.env.HOST
+    // host: 'localhost', // can be overwritten by process.env.HOST
+    host: '192.168.5.253', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     //  在浏览器是否展示错误蒙层
     autoOpenBrowser: true,
