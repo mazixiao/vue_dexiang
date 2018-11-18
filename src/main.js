@@ -23,6 +23,17 @@ import axios from 'axios';
 /*使用axios插件*/
 Vue.prototype.$axios = axios;
 
+// 多语言切换
+import VueI18n from 'vue-i18n'
+Vue.use(VueI18n)
+const i18n = new VueI18n({
+	// 语言标识
+	locale: 'cn', 
+	messages: {
+		'cn': require('./assets/js/lang/cn'),
+		'en': require('./assets/js/lang/en')
+	}
+})
 
 
 // 设置网页title
@@ -33,6 +44,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  i18n,
   router,
   components: { App },
   template: '<App/>'

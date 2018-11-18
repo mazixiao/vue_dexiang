@@ -9,6 +9,7 @@
 			<div class="nav_con">
 				<div class="oneHierarchy" v-for='(item1, index1) in navss'>
 					<div exact class="hierarchy1_tit clearfix" @click='twoHierarchyControl(index1)'>
+						<!-- @click.native:事件后面要添加.native,不然添加的事件不起作用，具体原因应该是router-link为了阻止a标签的默认跳转事件 @click.native="flushCom" -->
 	                    <router-link :class='{cover: !item1.children}' :to="{path:item1.link,query: {banner: item1.title}}" tag="a">{{item1.title}}</router-link>
 	                    <i class="iconfont icon-arrow-down" v-show='item1.children' :class='{overturn:index1 === twoHierarchy && status1 == index1}'></i>
 					</div>
@@ -44,13 +45,13 @@
 							<img src="../../assets/img/commonImg/search.png" alt="">
 						</a>
 					</div>
-					<div class="member">
+		<!-- 			<div class="member">
 						<a href="javascript:;">登录</a>
 						<a href="javascript:;">注册</a>
-					</div>
-					<a href="javascript:;" class="english">
+					</div> -->
+					<a href="javascript:;" class="english" @click='changeLang()'>
 						<i class="iconfont icon-1diqiu"></i>
-						<span>English</span>
+						<span>{{langs}}</span>
 					</a>
 				</div>
 			</div>

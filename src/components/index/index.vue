@@ -18,8 +18,12 @@
 			</swiper-item>
 		</swiper>
 
+<div style='font-size: 40px'>{{$t('menu1.home1')}}</div>
+<input style='font-size: 40px;width: 100%' :placeholder="$t('content1.main1')" type="text">
+
+
 		<div class="industry_application">
-			<div class="title">行业应用</div>
+			<div class="title">{{$t('content1.main2')}}</div>
 			<div class="industry">
 				<div class="industrys">
 					<a class="item" :class='{willHidden: index > 5 && isHidden }' href="javascript:;" v-for='(item, index) in industrys'>

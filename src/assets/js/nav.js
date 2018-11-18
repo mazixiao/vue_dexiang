@@ -384,7 +384,9 @@ export default {
 			// 控制四级导航显示与隐藏
 			fourHierarchy: null,
 			status3: null,	
-			navCon: null		
+			navCon: null,
+			// 语言切换
+			langs: 'English'		
 		}
 	},
 	methods: {
@@ -419,14 +421,29 @@ export default {
 				this.status3 = null
 			};
 		},
+		changeLang () {
+			// 增加传入语言
+			if(this.$i18n.locale=='cn') {
+				this.langs='中文';
+				this.$i18n.locale='en';
+			} else {
+				this.langs='English';
+				this.$i18n.locale='cn';
+			};
+			// window.location.reload();
+		},
+		//a标签跳转链接后刷新
+　　　　flushCom() {
+　　　　　　//router是路由实例,例如:var router = new Router({})
+　　　　　　//router.go(n)是路由的一个方法，意思是在history记录中前进或者后退多少步，
+			//0就表示还是当前，类似window.history.go(n)
+　　　　　　this.$router.go(0);  
+　　　　}
 	},
 	mounted() {
-		// console.log(this.$route, 'mounted');
-		// const params = this.$route.matched;
-		// console.log(params, 'mounted');
+
 	},
 	created() {
-		// this.navCon = this.$route
-		// console.log(this.$route, 'created');
+
 	}
 }

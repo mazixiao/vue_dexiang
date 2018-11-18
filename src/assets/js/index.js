@@ -9,6 +9,9 @@ import swiper1 from '../img/indexImg/phone_kv1.jpg'
 import swiper2 from '../img/indexImg/phone_kv2.jpg'
 import swiper3 from '../img/indexImg/phone_kv3.jpg'
 
+//引入cookie
+import Cookies from 'js-cookie'
+// Vue.use(Cookies)
 
 // 行业应用icon
 import use1 from '../img/indexImg/use1.png'
@@ -220,7 +223,7 @@ export default {
 	      console.log('error load', msg, src)
 	      const span = ele.parentNode.querySelector('span')
 	      span.innerText = 'load error'
-	    }	    	    
+	    },	    	    	    
 	  },	
 	mounted () {
 
