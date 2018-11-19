@@ -397,6 +397,7 @@ export default {
 		parentSwitch() {
 			this.$emit('parentSwitch');
 		},
+		//开关二级导航
 		twoHierarchyControl(index1) {
 			this.twoHierarchy = index1;
 			if(this.status1 !== index1) {
@@ -405,6 +406,7 @@ export default {
 				this.status1 = null
 			};
 		},
+		//开关三级导航
 		threeHierarchyControl(index2) {
 			this.threeHierarchy = index2;
 			if(this.status2 !== index2) {
@@ -413,6 +415,7 @@ export default {
 				this.status2 = null
 			};
 		},
+		//开关四级导航
 		fourHierarchyControl(index3) {
 			this.fourHierarchy = index3;
 			if(this.status3 !== index3) {
