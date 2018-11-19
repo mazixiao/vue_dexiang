@@ -1,4 +1,7 @@
 
+//引入cookie
+import Cookies from 'js-cookie'
+
 // nav
 export default {
 	name: 'commonNav',
@@ -389,6 +392,25 @@ export default {
 			langs: 'English'		
 		}
 	},
+	mounted() {
+		if(Cookies.get('lng')=='0') {
+			this.$i18n.locale='cn';
+			this.langs='English';
+		} else {
+			this.$i18n.locale='en';
+			this.langs='中文';
+		}
+			Cookies.set('lng', this.$i18n.locale =='cn'?'0':'1');
+	},
+	created() {
+
+	},
+	watch: {
+		locale (val) {
+			// this.$i18n.locale = val;
+			// console.log("locale",val);
+		}       
+	},
 	methods: {
 		navShow() {
 			this.navIsShow = !this.navIsShow;
@@ -427,13 +449,21 @@ export default {
 		changeLang () {
 			// 增加传入语言
 			if(this.$i18n.locale=='cn') {
-				this.langs='中文';
+				this.langs='English';
 				this.$i18n.locale='en';
 			} else {
-				this.langs='English';
+				this.langs='中文';
 				this.$i18n.locale='cn';
 			};
-			// window.location.reload();
+			// Cookies.set('name', 'value');
+			// var aa = Cookies.get('name');
+			// console.log(aa);
+
+			Cookies.set('lng', this.$i18n.locale =='cn'?'0':'1');
+			window.location.reload();//进行刷新改变cookie里的值
+
+			console.log(this.$i18n.locale);
+
 		},
 		//a标签跳转链接后刷新
 　　　　flushCom() {
@@ -443,10 +473,4 @@ export default {
 　　　　　　this.$router.go(0);  
 　　　　}
 	},
-	mounted() {
-
-	},
-	created() {
-
-	}
 }

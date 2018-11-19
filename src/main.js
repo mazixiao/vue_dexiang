@@ -33,7 +33,8 @@ const i18n = new VueI18n({
 		'cn': require('./assets/js/lang/cn'),
 		'en': require('./assets/js/lang/en')
 	}
-})
+});
+
 
 
 // 设置网页title
