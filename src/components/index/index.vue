@@ -36,7 +36,7 @@
 				<div class="flexible" @click='willHidden()'>
 					<span class="plus" v-if='isHidden'>+</span>
 					<span class="plus" v-if='!isHidden'>-</span>
-					<span v-if='isHidden'>查看全部</span>
+					<span v-if='isHidden'>查看全部!</span>
 					<span v-if='!isHidden'>收起</span>
 				</div>
 			</div>
