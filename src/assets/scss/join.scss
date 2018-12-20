@@ -3,7 +3,7 @@
 
 
 .join {
-	margin-top: 58px;
+	margin-top: px2em(58px);
 	.banner {
 		width: 100%;
 		font-size: 0;
@@ -21,7 +21,7 @@
 		    font-size: 20px;
 		    position: absolute;
 		    top: 50%;
-		    left: 27px;
+		    left: px2em(27px);
 		}		
 	}	
 
@@ -31,31 +31,31 @@
 	    position: relative;
 	    z-index: 2;
 		width: 100%;
-		padding: 0 10px;
+		padding: 0 px2em(10px);
 		box-sizing: border-box;
-		margin-top: -30px;
-		margin-bottom: 20px; 
+		margin-top: px2em(-30px);
+		margin-bottom: px2em(20px); 
 		.left_nav {
 		    width: 100%;
 		    background: #00449b;
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: px2em(20px);
+			padding-bottom: px2em(20px);
 		    display: inline-block;
 		    vertical-align: top;
 			.tit {
 			    font-size: 30px;
 			    text-align: center;
 			    color: #fff;
-			    margin-bottom: 20px;
+			    margin-bottom: px2em(20px);
 			}
 			.con {
 			    font-size: 0;
 				.item {
 				    display: inline-block;
-				    height: 40px;
+				    height: px2em(40px);
 				    width: 100%;
 				    box-sizing: border-box;
-				    padding: 0 10px;
+				    padding: 0 px2em(10px);
 				    position: relative;
 				    transition: all 0.5s;
 					&.active {
@@ -71,24 +71,23 @@
 					    width: 100%;
 					    box-sizing: border-box;
 						.round {
-						    width: 10px;
-						    height: 10px;
+						    width: px2em(10px);
+						    height: px2em(10px);
 						    box-sizing: border-box;
 						    border: 1px solid rgba(255, 255, 255, 0.3);
 						    border-radius: 50%;
 						    display: inline-block;
 						    vertical-align: middle;
-						    margin-right: 25px;
+						    margin-right: px2em(25px);
 						    transition: all 0.5s;
 						}
 						.text {
-						    font-size: 14px;
 						    color: #fff;
 						    display: inline-block;
 						    vertical-align: middle;
 						    width: 80%;
 							font-size: 12px;
-							line-height: 22px;
+							line-height: px2em(22px);
 						}						
 					}										
 				}			    
@@ -103,19 +102,19 @@
 		    background: #fcfcfc;
 		    box-sizing: border-box;
 			width: 100%;
-		    margin-top: 20px;
+		    margin-top: px2em(20px);
 			.tit {
 				font-size: 22px;
-				margin-bottom: 20px;
+				margin-bottom: px2em(20px);
 			}
 			.con {
 			    width: 100%;
 				.item {
 				    border: 1px solid #cbd2db;
 				    box-sizing: border-box;
-				    margin-bottom: 10px;
+				    margin-bottom: px2em(10px);
 					.one {
-					    padding: 10px;
+					    padding: px2em(10px);
 					    font-size: 0;
 					    cursor: pointer;
 					    transition: all 0.5s;
@@ -125,13 +124,13 @@
 						    width: 87%;
 						    display: inline-block;
 						    box-sizing: border-box;
-						    padding-right: 5px;
+						    padding-right: px2em(5px);
 						}
 						.right {
 						    border-radius: 50%;
-						    width: 30px;
-						    height: 30px;
-						    line-height: 30px;
+						    width: px2em(30px);
+						    height: px2em(30px);
+						    line-height: px2em(30px);
 						    text-align: center;
 						    color: #fff;
 						    background: #00449b;
@@ -141,13 +140,13 @@
 						}
 					}
 					.two {
-					    padding: 10px;
+					    padding: px2em(10px);
 					    font-size: 12px;
 						.require {
-						    margin-bottom: 20px;
+						    margin-bottom: px2em(20px);
 							.item_ss {
 							    display: inline-block;
-							    margin-right: 25px;
+							    margin-right: px2em(25px);
 							    &:last-child {
 							    	margin-right: 0;
 							    }
@@ -160,11 +159,11 @@
 						    border: 1px solid #00449b;
 						    box-sizing: border-box;
 						    transition: all 0.5s;
-							height: 40px;
-							line-height: 40px;
-							padding: 0 20px;
+							height: px2em(40px);
+							line-height: px2em(40px);
+							padding: 0 px2em(20px);
 							font-size: 12px;
-							margin-top: 20px;
+							margin-top: px2em(20px);
 						}
 					}
 				}

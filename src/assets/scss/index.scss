@@ -2,7 +2,7 @@
 @import 'public';
 
 .index {
-	margin-top: 58px;	
+	margin-top: px2em(58px);	
 	.swiper {
 		.swiper_item {
 			position: relative;
@@ -19,7 +19,7 @@
 					text-align: left;
 				.text1 {
 					font-size: 14px;
-					line-height: 20px;
+					line-height: px2em(20px);
 				}
 				.text2 {
 					font-size: 18px;
@@ -27,16 +27,16 @@
 				}	
 				.more {
 					font-size: 12px;
-					width: 90px;
-					height: 30px;
-					line-height: 30px;
-					margin-top: 15px;
+					width: px2em(90px);
+					height: px2em(30px);
+					line-height: px2em(30px);
+					margin-top: px2em(15px);
 					color: #fff;
 					text-align: center;
 					background: rgba(255, 255, 255, 0.2);
 					display: inline-block;
 					span {
-						margin-right: 5px;
+						margin-right: px2em(5px);
 					}
 				}
 
@@ -47,8 +47,8 @@
 		.vux-indicator {
 			a {
 				.vux-icon-dot {
-					width: 10px;
-					height: 10px;
+					width: px2em(10px);
+					height: px2em(10px);
 					box-sizing: border-box;
 					border: 1px solid #fff;
 					background-color: transparent;
@@ -64,8 +64,8 @@
 	.industry_application {
 		width: 100%;
 		box-sizing: border-box;
-		padding: 0 10px;
-		margin-top: 20px;		
+		padding: 0 px2em(10px);
+		margin-top: px2em(20px);		
 		.title {
 			text-align: center;
 			font-size: 20px;
@@ -75,7 +75,7 @@
 		.industry {
 			width: 100%;
 			font-size: 0;
-			margin-top: 30px;
+			margin-top: px2em(30px);
 			border-bottom: 1px solid #e5e5e5;
 			text-align: left;
 			.industrys {
@@ -83,7 +83,7 @@
 					width: 16.6%;
 					display: inline-block;
 					text-align: center;
-					margin-bottom: 20px;
+					margin-bottom: px2em(20px);
 					vertical-align: top;	
 					.icon {
 						width: 100%;
@@ -103,9 +103,9 @@
 				}
 			}
 			.flexible {
-				width: 100px;
-				height: 35px;
-				line-height: 35px;
+				width: px2em(100px);
+				height: px2em(35px);
+				line-height: px2em(35px);
 				background: #00449b;
 				text-align: center;
 				display: block;
@@ -119,7 +119,7 @@
 					font-size: 12px;
 					display: inline-block;
 					.plus {
-						margin-right: 10px;
+						margin-right: px2em(10px);
 					}
 				}
 			}
@@ -127,10 +127,10 @@
 		.agency {
 			width: 100%;
 			.text {
-				margin-top: 20px;
+				margin-top: px2em(20px);
 				.one {
 					font-size: 12px;
-					line-height: 24px;
+					line-height: px2em(24px);
 					.counter1 {
 						font-size: 24px;
 						color: #00449b;
@@ -138,29 +138,29 @@
 				}
 			}	
 			.map {
-				margin-top: 20px;
+				margin-top: px2em(20px);
 				.phone_map {
 					width: 100%;
 				}
 				.phone_office {
-					margin-top: 30px;
+					margin-top: px2em(30px);
 					width: 100%;
 					.item_s {
 						border: 1px solid #00449b;
 						text-align: left;
-						padding: 20px 2% 20px 10%;
-						margin-bottom: 17px;
+						padding: px2em(20px) 2% px2em(20px) 10%;
+						margin-bottom: px2em(17px);
 						.tit_s {
 						    font-size: 14px;
-						    line-height: 24px;
-						    margin-bottom: 5px;
+						    line-height: px2em(24px);
+						    margin-bottom: px2em(5px);
 							border-bottom: 1px solid #00449b;
 							display: inline-block;
 						}		
 						.con_s {
 							span {
 							    font-size: 14px;
-							    line-height: 24px;
+							    line-height: px2em(24px);
 								color: #666;
 								display: block;
 								&:nth-child(3), &:nth-child(4) {
@@ -173,10 +173,10 @@
 						}			
 					}
 					.flexible {
-					    width: 100px;
-					    height: 35px;
-					    line-height: 35px;
-					    margin-top: 5px;
+					    width: px2em(100px);
+					    height: px2em(35px);
+					    line-height: px2em(35px);
+					    margin-top: px2em(5px);
 						background: #00449b;
 						text-align: center;
 						display: block;
@@ -187,29 +187,29 @@
 						span {
 							font-size: 12px;
 							&.plus {
-							    margin-right: 10px;
+							    margin-right: px2em(10px);
 							}
 						}						
 					}					
 				}
 			}
 			.service {
-				margin-top: 20px;
+				margin-top: px2em(20px);
 				text-align: center;
 				.tit {
-					font-size: 20px;
-					margin-bottom: 15px;
+					font-size: px2em(20px);
+					margin-bottom: px2em(15px);
 					text-align: center;
 				}
 				.small_tit {
 					font-size: 12px;
-					line-height: 24px;
+					line-height: px2em(24px);
 					span {
 						color: #00449b;
 					}
 				}
 				.introduce {
-				    margin-top: 20px;
+				    margin-top: px2em(20px);
 				    font-size: 0;
 				    .item {
 						width: 50%;
@@ -219,7 +219,7 @@
 						position: relative;
 						vertical-align: top;
 						cursor: pointer;
-						margin-bottom: 20px;	
+						margin-bottom: px2em(20px);	
 						&:before {
 							position: absolute;
 							content: '';
@@ -238,7 +238,7 @@
 						    top: 0;
 						    left: 0;
 						    transform: translate(0, 0);
-						    padding: 0 4px;
+						    padding: 0 px2em(4px);
 						    width: 100%;
 							box-sizing: border-box;
 							font-size: 0;
@@ -248,11 +248,11 @@
 							}	
 							.two {
 							    font-size: 12px;
-							    line-height: 24px;
+							    line-height: px2em(24px);
 							}	
 							.three {
-							    width: 30px;
-							    height: 30px;
+							    width: px2em(30px);
+							    height: px2em(30px);
 							    margin-top: 5px;
 								display: inline-block;
 								border-radius: 50%;
@@ -271,8 +271,8 @@
 
 
 	.company_news {
-		padding: 0 30px;
-		margin-top: 50px;
+		padding: 0 px2em(30px);
+		margin-top: px2em(50px);
 		height: auto;
 		width: 100%;
 		background: url('../../assets/img/indexImg/info_bg.jpg') no-repeat center center;
@@ -281,8 +281,8 @@
 		box-sizing: border-box;
 		.tit {
 		    font-size: 20px;
-		    padding-top: 20px;
-		    padding-bottom: 20px;
+		    padding-top: px2em(20px);
+		    padding-bottom: px2em(20px);
 		}		
 		ul {
 		    width: 100%;
@@ -299,22 +299,22 @@
 				    outline: 1px solid transparent;
 				    text-align: center;
 				    box-sizing: border-box;
-				    padding: 5px 5px 0 5px;
+				    padding: px2em(5px) px2em(5px) 0 px2em(5px);
 				    font-size: 0;
 				    position: relative;
 				    transition: all 0.8s;
 				    display: inline-block;
-				    height: 260px;
-				    margin-bottom: 10px;
+				    height: px2em(260px);
+				    margin-bottom: px2em(10px);
 					.img {
-					    width: 150px;
-					    height: 150px;
+					    width: px2em(150px);
+					    height: px2em(150px);
 					    border-radius: 50%;
 					    overflow: hidden;
 					    display: inline-block;
 					    position: relative;
 					    z-index: 1;
-					    margin-top: 10px;
+					    margin-top: px2em(10px);
 					    img {
 					    	max-width: none;
 					    }
@@ -327,7 +327,7 @@
 					    }
 					}
 					.text {
-					    margin-top: 30px;
+					    margin-top: px2em(30px);
 					    overflow: hidden;
 					    display: -webkit-box;
 					    -webkit-line-clamp: 2;
@@ -335,14 +335,14 @@
 					    word-break: break-all;
 					    color: #333;
 						font-size: 12px;
-						line-height: 24px;
+						line-height: px2em(24px);
 						text-align: center;
-						max-height: 48px;
+						max-height: px2em(48px);
 					}	
 					.date {
 					    position: absolute;
-					    width: 52px;
-					    height: 52px;
+					    width: px2em(52px);
+					    height: px2em(52px);
 					    background: #00449b;
 					    border-radius: 50%;
 						right: 25%;
