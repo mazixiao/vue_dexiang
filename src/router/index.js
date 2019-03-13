@@ -86,5 +86,7 @@ export default new Router({
 			title: '新闻列表'
 		},    
     },                    
-  ]
+  ],
+	//默认是hash模式
+	mode:'history',
 })
