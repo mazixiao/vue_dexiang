@@ -53,6 +53,7 @@ export default {
 	      })
 	      .catch((error) => {
 	        console.log(error);
+	        alert(error);
 	      });
 	    },
 	    // 滚动加载
